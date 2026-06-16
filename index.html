@@ -370,7 +370,9 @@
       gap: 14px;
     }
     .service-card {
-      min-height: 228px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
       background: rgba(255,255,255,.82);
       border: 1px solid rgba(185,138,61,.22);
       border-radius: 8px;
@@ -408,10 +410,17 @@
       font-weight: 500;
     }
     .service-card p {
-      margin: 0;
+      margin: 0 0 22px;
+      flex: 1;
       color: #27364e;
       font-size: 13px;
       line-height: 1.55;
+    }
+    .service-link {
+      align-self: center;
+      min-width: 150px;
+      margin-top: auto;
+      padding: 15px 22px;
     }
     .card-rule {
       width: 48px;
@@ -482,6 +491,28 @@
       display: grid;
       gap: 14px;
     }
+    .privacy-consent {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #314158;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .privacy-consent input {
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+      margin: 2px 0 0;
+      padding: 0;
+      accent-color: var(--gold);
+      flex: 0 0 auto;
+    }
+    .privacy-consent a {
+      color: var(--gold);
+      font-weight: 800;
+    }
     input, textarea {
       width: 100%;
       border: 1px solid rgba(6,27,57,.14);
@@ -498,6 +529,7 @@
       border-color: rgba(185,138,61,.64);
       box-shadow: 0 0 0 4px rgba(185,138,61,.10);
     }
+    .form .form-actions { grid-column: 1 / -1; }
     .form-actions {
       width: min(1080px, 100%);
       margin: 18px auto 0;
@@ -703,7 +735,7 @@
     }
     .submenu-panel a:hover { background: rgba(185,138,61,.10); }
     .submenu-panel a::after { display: none; }
-    .service-link { margin-top: 18px; padding: 12px 18px; font-size: 12px; }
+    .service-link { margin-top: auto; padding: 12px 18px; font-size: 12px; }
     .page-hero {
       min-height: 290px;
       display: grid;
@@ -802,7 +834,7 @@
             <h1>civil - mercantil<br />administrativo - amparo</h1>
             <div class="gold-rule"></div>
             <p>Asesoría legal integral de calidad para empresas.</p>
-            <a class="btn btn-primary" href="#contacto">Solicitar una consulta <span>›</span></a>
+            <a class="btn btn-primary" href="contacto.html">Solicitar una consulta <span>›</span></a>
           </div>
 
           <div class="dots" aria-label="Seleccionar imagen del slider">
@@ -857,31 +889,6 @@
         </div>
       </div>
     </section>
-
-    <section class="contact" id="contacto">
-      <div class="container">
-        <div class="section-title">
-          <h2>Solicitar una consulta</h2>
-          <div class="mini-line" style="margin-top: 16px;"></div>
-        </div>
-        <p class="contact-intro">González Corona, Chapa, Covarrubias y Asociados S. C., es una sociedad conformada por expertos abogados en distintas especialidades del derecho,reunidos para lograr un objetivo común, ofrecer asesoría legal integral de calidad a empresas.</p>
-        <form class="form">
-          <div class="form-col">
-            <input type="text" name="nombre" placeholder="Nombre completo" autocomplete="name" />
-            <input type="email" name="email" placeholder="Correo electrónico" autocomplete="email" />
-          </div>
-          <div class="form-col">
-            <input type="tel" name="telefono" placeholder="Teléfono" autocomplete="tel" />
-            <input type="text" name="asunto" placeholder="Asunto" />
-          </div>
-          <textarea name="mensaje" placeholder="Cuéntenos brevemente su caso"></textarea>
-        </form>
-        <div class="form-actions">
-          <button class="btn btn-primary" type="button">Enviar <span>›</span></button>
-          <span>Sugerencia: Introduzca entre 80 - 300 caracteres.</span>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -902,7 +909,7 @@
         <span>☎ 55 14 38 88 - 55 14 38 89</span>
       </div>
     </div>
-    <div class="container copyright">Derechos Resrvados © 2016 l Digital Medias. Derechos Reservados. | <a href="https://gcchapacabogados.com/avisodeprivacidad.php">Aviso de Privacidad</a></div>
+    <div class="container copyright">Derechos Reservados © 2016 | <a href="https://www.o7digital.com/es/index-digital-agency" target="_blank" rel="noopener">o7 Digital</a>. Derechos Reservados. | <a href="/aviso-de-privacidad/">Aviso de Privacidad</a></div>
   </footer>
   <script>
     const slides = Array.from(document.querySelectorAll(".hero-slide"));

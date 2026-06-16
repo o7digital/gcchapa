@@ -364,7 +364,9 @@
       gap: 14px;
     }
     .service-card {
-      min-height: 228px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
       background: rgba(255,255,255,.82);
       border: 1px solid rgba(185,138,61,.22);
       border-radius: 8px;
@@ -402,10 +404,17 @@
       font-weight: 500;
     }
     .service-card p {
-      margin: 0;
+      margin: 0 0 22px;
+      flex: 1;
       color: #27364e;
       font-size: 13px;
       line-height: 1.55;
+    }
+    .service-link {
+      align-self: center;
+      min-width: 150px;
+      margin-top: auto;
+      padding: 15px 22px;
     }
     .card-rule {
       width: 48px;
@@ -476,6 +485,28 @@
       display: grid;
       gap: 14px;
     }
+    .privacy-consent {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #314158;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .privacy-consent input {
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+      margin: 2px 0 0;
+      padding: 0;
+      accent-color: var(--gold);
+      flex: 0 0 auto;
+    }
+    .privacy-consent a {
+      color: var(--gold);
+      font-weight: 800;
+    }
     input, textarea {
       width: 100%;
       border: 1px solid rgba(6,27,57,.14);
@@ -492,6 +523,7 @@
       border-color: rgba(185,138,61,.64);
       box-shadow: 0 0 0 4px rgba(185,138,61,.10);
     }
+    .form .form-actions { grid-column: 1 / -1; }
     .form-actions {
       width: min(1080px, 100%);
       margin: 18px auto 0;
@@ -697,7 +729,7 @@
     }
     .submenu-panel a:hover { background: rgba(185,138,61,.10); }
     .submenu-panel a::after { display: none; }
-    .service-link { margin-top: 18px; padding: 12px 18px; font-size: 12px; }
+    .service-link { margin-top: auto; padding: 12px 18px; font-size: 12px; }
     .page-hero {
       min-height: 290px;
       display: grid;
@@ -746,4 +778,4 @@
       .submenu:hover .submenu-panel, .submenu:focus-within .submenu-panel { transform: none; }
       .partners-grid { grid-template-columns: 1fr; }
     }
-  </style></head><body><div class="topbar"><div class="container"><span class="phone-dot">☎</span><span>Números Telefónicos <strong>55 14 38 88 - 55 14 38 89</strong></span></div></div><header><nav class="container"><a class="brand" href="index.html#inicio" aria-label="Inicio"><img src="images/logocb.png" alt="González Corona, Chapa, Covarrubias y Asociados, S.C. Abogados" /></a><button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button><div class="menu" id="primary-menu" aria-label="Navegación principal"><a class="" href="index.html#inicio">Inicio</a><a class="active" href="quienes-somos.html">Quienes Somos</a><span class="submenu"><a class="dropdown" href="index.html#servicios">Nuestros Servicios <span class="chev">⌄</span></a><span class="submenu-panel"><a href="derecho-civil.html">Derecho Civil</a><a href="derecho-mercantil.html">Derecho Mercantil</a><a href="derecho-administrativo.html">Derecho Administrativo</a><a href="derecho-amparo.html">Derecho Amparo</a><a href="derecho-inmobiliario.html">Derecho Inmobiliario</a><a href="derecho-corporativo.html">Derecho Corporativo</a><a href="derecho-fiscal.html">Derecho Fiscal</a><a href="derecho-penal.html">Derecho Penal</a><a href="propiedad-industrial.html">Propiedad Intelectual</a></span></span><a class="" href="socios.html">Socios</a><a class="" href="contacto.html">Contacto</a><a href="en/about-us.html">EN</a></div></nav></header><main><section class="page-hero"><div class="container"><h1>QUIENES SOMOS?</h1><p>Asesoría legal integral de calidad para empresas.</p></div></section><section class="content-section"><div class="container content-wrap"><div class="practice-box"><h2>QUIENES SOMOS?</h2><div class="mini-line" style="margin: 0 0 24px;"></div><p>González Corona, Chapa, Covarrubias y Asociados S. C., es una sociedad conformada por expertos abogados en distintas especialidades del derecho, reunidos para lograr un objetivo común: ofrecer asesoría legal integral de calidad a todo tipo de empresas. Cada uno de los socios tiene una trayectoria profesional reconocida en diversas materias del derecho que en conjunto ofrecen una atención completa y personalizada.</p><p>El equipo está conformado por abogados egresados de las más prestigiadas universidades, dinámicos, emprendedores, altamente calificados, actualizados y con amplia experiencia en las diferentes ramas del derecho. Contamos con elementos materiales y humanos para brindar un mejor servicio, oficinas equipadas con tecnología que facilita el trabajo y logra una mejor calidad y rapidez en nuestro desempeño.</p><p>La firma tiene valores éticos y morales bien definidos, nuestro equipo está completamente comprometido con sus clientes y nuestro más importante fin es alcanzar su satisfacción total.</p></div></div></section></main><footer><div class="container footer-grid"><div class="footer-logo"><img src="images/logocb.png" alt="González Corona, Chapa, Covarrubias y Asociados, S.C." /></div><div class="footer-col"><h4>Enlaces</h4><a href="index.html#inicio">Inicio</a><a href="quienes-somos.html">Quienes Somos</a><a href="index.html#servicios">Nuestros Servicios</a><a href="socios.html">Socios</a><a href="contacto.html">Contacto</a></div><div class="footer-col"><h4>Contacto</h4><span>☎ 55 14 38 88 - 55 14 38 89</span></div></div><div class="container copyright">Derechos Resrvados © 2016 l Digital Medias. Derechos Reservados. | <a href="https://gcchapacabogados.com/avisodeprivacidad.php">Aviso de Privacidad</a></div></footer><script>const menuToggle=document.querySelector('.menu-toggle');const menuLinks=Array.from(document.querySelectorAll('.menu a'));if(menuToggle){menuToggle.addEventListener('click',()=>{const isOpen=document.body.classList.toggle('menu-open');menuToggle.setAttribute('aria-expanded',String(isOpen));menuToggle.setAttribute('aria-label',isOpen?'Cerrar menú':'Abrir menú');});menuLinks.forEach((link)=>{link.addEventListener('click',()=>{document.body.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');});});document.addEventListener('keydown',(event)=>{if(event.key==='Escape'){document.body.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');}});}</script></body></html>
+  </style></head><body><div class="topbar"><div class="container"><span class="phone-dot">☎</span><span>Números Telefónicos <strong>55 14 38 88 - 55 14 38 89</strong></span></div></div><header><nav class="container"><a class="brand" href="index.html#inicio" aria-label="Inicio"><img src="images/logocb.png" alt="González Corona, Chapa, Covarrubias y Asociados, S.C. Abogados" /></a><button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button><div class="menu" id="primary-menu" aria-label="Navegación principal"><a class="" href="index.html#inicio">Inicio</a><a class="active" href="quienes-somos.html">Quienes Somos</a><span class="submenu"><a class="dropdown" href="index.html#servicios">Nuestros Servicios <span class="chev">⌄</span></a><span class="submenu-panel"><a href="derecho-civil.html">Derecho Civil</a><a href="derecho-mercantil.html">Derecho Mercantil</a><a href="derecho-administrativo.html">Derecho Administrativo</a><a href="derecho-amparo.html">Derecho Amparo</a><a href="derecho-inmobiliario.html">Derecho Inmobiliario</a><a href="derecho-corporativo.html">Derecho Corporativo</a><a href="derecho-fiscal.html">Derecho Fiscal</a><a href="derecho-penal.html">Derecho Penal</a><a href="propiedad-industrial.html">Propiedad Intelectual</a></span></span><a class="" href="socios.html">Socios</a><a class="" href="contacto.html">Contacto</a><a href="en/about-us.html">EN</a></div></nav></header><main><section class="page-hero"><div class="container"><h1>QUIENES SOMOS?</h1><p>Asesoría legal integral de calidad para empresas.</p></div></section><section class="content-section"><div class="container content-wrap"><div class="practice-box"><h2>QUIENES SOMOS?</h2><div class="mini-line" style="margin: 0 0 24px;"></div><p>González Corona, Chapa, Covarrubias y Asociados S. C., es una sociedad conformada por expertos abogados en distintas especialidades del derecho, reunidos para lograr un objetivo común: ofrecer asesoría legal integral de calidad a todo tipo de empresas. Cada uno de los socios tiene una trayectoria profesional reconocida en diversas materias del derecho que en conjunto ofrecen una atención completa y personalizada.</p><p>El equipo está conformado por abogados egresados de las más prestigiadas universidades, dinámicos, emprendedores, altamente calificados, actualizados y con amplia experiencia en las diferentes ramas del derecho. Contamos con elementos materiales y humanos para brindar un mejor servicio, oficinas equipadas con tecnología que facilita el trabajo y logra una mejor calidad y rapidez en nuestro desempeño.</p><p>La firma tiene valores éticos y morales bien definidos, nuestro equipo está completamente comprometido con sus clientes y nuestro más importante fin es alcanzar su satisfacción total.</p></div></div></section></main><footer><div class="container footer-grid"><div class="footer-logo"><img src="images/logocb.png" alt="González Corona, Chapa, Covarrubias y Asociados, S.C." /></div><div class="footer-col"><h4>Enlaces</h4><a href="index.html#inicio">Inicio</a><a href="quienes-somos.html">Quienes Somos</a><a href="index.html#servicios">Nuestros Servicios</a><a href="socios.html">Socios</a><a href="contacto.html">Contacto</a></div><div class="footer-col"><h4>Contacto</h4><span>☎ 55 14 38 88 - 55 14 38 89</span></div></div><div class="container copyright">Derechos Reservados © 2016 | <a href="https://www.o7digital.com/es/index-digital-agency" target="_blank" rel="noopener">o7 Digital</a>. Derechos Reservados. | <a href="/aviso-de-privacidad/">Aviso de Privacidad</a></div></footer><script>const menuToggle=document.querySelector('.menu-toggle');const menuLinks=Array.from(document.querySelectorAll('.menu a'));if(menuToggle){menuToggle.addEventListener('click',()=>{const isOpen=document.body.classList.toggle('menu-open');menuToggle.setAttribute('aria-expanded',String(isOpen));menuToggle.setAttribute('aria-label',isOpen?'Cerrar menú':'Abrir menú');});menuLinks.forEach((link)=>{link.addEventListener('click',()=>{document.body.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');});});document.addEventListener('keydown',(event)=>{if(event.key==='Escape'){document.body.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menú');}});}</script></body></html>
