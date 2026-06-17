@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Notice | GC Chapa Abogados</title>
-  <style>body{font-family:Arial,Helvetica,sans-serif;background:#fff;margin:0;padding:40px;color:#111}</style>
+  <meta name="description" content="Privacy Notice of GONZALEZ CORONA, CHAPA, COVARRUBIAS Y ASOCIADOS S.C." />
+  <style>
+    :root { --navy: #061b39; --gold: #b98a3d; --paper: #fffdf8; --ink: #142033; --muted: #5f6b7c; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: linear-gradient(180deg, #faf7f2 0%, #fff 42%, #f8f4ee 100%); }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1280px, calc(100% - 56px)); margin: 0 auto; }
+    .topbar { height: 34px; background: #efe8dd; color: var(--navy); font-size: 13px; font-weight: 700; }
+    .topbar .container { height: 34px; display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+    header { background: rgba(255,255,255,.94); border-bottom: 1px solid rgba(6,27,57,.08); }
+    nav { min-height: 138px; display: grid; grid-template-columns: 520px 1fr; align-items: center; gap: 36px; }
+    .brand img { width: 475px; max-height: 116px; object-fit: contain; display: block; }
+    .menu { display: flex; align-items: center; justify-content: flex-end; gap: 34px; font-size: 15px; font-weight: 700; color: var(--navy); white-space: nowrap; }
+    .menu a { padding: 12px 0; position: relative; }
+    .menu a::after { content: ""; position: absolute; left: 0; bottom: 2px; width: 0; height: 2px; background: var(--gold); transition: width .2s ease; }
+    .menu a:hover, .menu a.active { color: var(--gold); }
+    .menu a:hover::after, .menu a.active::after { width: 100%; }
+    .page-hero { background: linear-gradient(120deg, rgba(6,27,57,.92), rgba(6,27,57,.62)), url('../../images/header-img.jpg') center/cover no-repeat; color: white; text-align: center; padding: 92px 0; }
+    .page-hero h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 6vw, 76px); font-weight: 500; line-height: 1.04; }
+    .page-hero p { margin: 16px auto 0; max-width: 760px; color: rgba(255,255,255,.86); line-height: 1.7; }
+    .legal-section { padding: 72px 0 86px; }
+    .legal-card { width: min(900px, 100%); margin: 0 auto; background: rgba(255,255,255,.88); border: 1px solid rgba(185,138,61,.22); border-radius: 8px; padding: clamp(28px, 5vw, 54px); box-shadow: 0 18px 46px rgba(6,27,57,.08); }
+    .legal-card h2 { margin: 0 0 18px; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 4vw, 44px); font-weight: 500; }
+    .mini-line { width: 58px; height: 2px; background: var(--gold); margin: 0 0 30px; }
+    .legal-card h3 { margin: 28px 0 10px; color: var(--navy); font-size: 19px; }
+    .legal-card p, .legal-card li { color: #27364e; line-height: 1.82; font-size: 16px; }
+    .legal-card p { margin: 0 0 18px; }
+    .legal-card ul { margin: 0 0 18px 22px; padding: 0; }
+    footer { background: linear-gradient(135deg, #061b39, #08264c); color: rgba(255,255,255,.84); padding: 44px 0 20px; }
+    .footer-grid { display: grid; grid-template-columns: 1.45fr 1fr 1.2fr; gap: 44px; align-items: start; }
+    .footer-logo img { width: 330px; max-width: 100%; filter: brightness(0) invert(1) sepia(.1) saturate(1.4) hue-rotate(170deg); opacity: .96; }
+    .footer-col { border-left: 1px solid rgba(211,175,111,.55); padding-left: 30px; }
+    .footer-col h4 { margin: 0 0 14px; color: white; font-size: 15px; }
+    .footer-col a, .footer-col span { display: block; color: rgba(255,255,255,.78); font-size: 14px; margin-bottom: 8px; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.13); margin-top: 34px; padding-top: 16px; text-align: center; color: rgba(255,255,255,.62); font-size: 12px; }
+    .copyright a { color: rgba(255,255,255,.86); }
+    @media (max-width: 900px) { nav { grid-template-columns: 1fr; gap: 18px; padding: 20px 0; } .brand img { width: min(420px, 100%); } .menu { justify-content: flex-start; flex-wrap: wrap; gap: 20px; } .footer-grid { grid-template-columns: 1fr; } .footer-col { border-left: 0; padding-left: 0; } }
+    @media (max-width: 640px) { .container { width: min(100% - 28px, 1280px); } .menu { gap: 12px; font-size: 14px; } .page-hero { padding: 70px 0; } }
+  </style>
 </head>
 <body>
-  <h1>Privacy Notice</h1>
-  <p>This page is temporarily disabled. Please contact info@gcchapacabogados.com for more information.</p>
+  <div class="topbar"><div class="container"><span>☎</span><span>Phone Numbers <strong>55 14 38 88 - 55 14 38 89</strong></span></div></div>
+  <header><nav class="container"><a class="brand" href="/en/index.html" aria-label="Home"><img src="../../images/logocb.png" alt="Gonzalez Corona, Chapa, Covarrubias y Asociados, S.C. Attorneys" /></a><div class="menu"><a href="/en/index.html#home">Home</a><a href="/en/about-us.html">About Us</a><a href="/en/index.html#services">Our Services</a><a href="/en/partners.html">Partners</a><a href="/en/contact.html">Contact</a><a href="/aviso-de-privacidad/">ES</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><h1>Privacy Notice</h1><p>GONZALEZ CORONA, CHAPA, COVARRUBIAS Y ASOCIADOS S.C.</p></div></section>
+    <section class="legal-section"><div class="container"><article class="legal-card"><h2>Privacy Notice</h2><div class="mini-line"></div><p>GONZALEZ CORONA, CHAPA, COVARRUBIAS Y ASOCIADOS S.C., located in Mexico City, Mexico, is responsible for the processing of the personal data you provide through this website, contact forms, email, phone calls, or any other communication channel with the firm.</p><h3>Personal Data We Collect</h3><p>We may collect identification and contact data, including name, email address, phone number, message subject, and any information you choose to include when requesting a consultation or contacting us.</p><h3>Purposes of Processing</h3><p>Your personal data will be used to respond to information requests, answer messages, follow up on inquiries, evaluate the possibility of providing legal services, maintain communication with you, and comply with applicable legal obligations.</p><h3>Transfers</h3><p>We do not transfer your personal data to third parties without your consent, except when necessary to comply with legal obligations, respond to requests from competent authorities, or protect the rights of the firm and its clients.</p><h3>ARCO Rights and Contact</h3><p>You may request access, rectification, cancellation, or opposition to the processing of your personal data, and you may revoke your consent, by sending a request to <a href="mailto:info@gcchapacabogados.com">info@gcchapacabogados.com</a> or calling 55 14 38 88 - 55 14 38 89. Your request should include your name, contact information, and a clear description of the right you wish to exercise.</p><h3>Changes to This Notice</h3><p>This Privacy Notice may be updated to reflect legal, operational, or service changes. Any modification will be available in this same section of the website.</p></article></div></section>
+  </main>
+  <footer><div class="container footer-grid"><div class="footer-logo"><img src="../../images/logocb.png" alt="Gonzalez Corona, Chapa, Covarrubias y Asociados, S.C." /></div><div class="footer-col"><h4>Links</h4><a href="/en/index.html#home">Home</a><a href="/en/about-us.html">About Us</a><a href="/en/index.html#services">Our Services</a><a href="/en/partners.html">Partners</a><a href="/en/contact.html">Contact</a></div><div class="footer-col"><h4>Contact</h4><span>☎ 55 14 38 88 - 55 14 38 89</span><span>info@gcchapacabogados.com</span><span>Mexico City, CDMX, Mexico</span></div></div><div class="container copyright">All Rights Reserved © 2016 | <a href="https://www.o7digital.com/en/index-digital-agency" target="_blank" rel="noopener">o7 Digital</a>. All Rights Reserved. | <a href="/en/privacy-notice/">Privacy Notice</a></div></footer>
 </body>
 </html>
